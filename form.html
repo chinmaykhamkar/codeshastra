@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="form.css" media="screen" />
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    </head>
+    <body>
+        <div class="content">
+           <div class="left">
+            
+<div class="align">
+
+  <div class="grid">
+
+    <div id="login">
+
+      <h2><span class="fontawesome-lock"></span>Sign In</h2>
+
+      <form action="#" method="POST">
+
+        <fieldset>
+
+          <p><label for="email">E-mail address</label></p>
+          <p><input type="email" id="email" placeholder="mail@address.com"></p>
+
+          <p><label for="password">Password</label></p>
+          <p><input type="password" id="password" placeholder="password"></p>
+
+          <p><input type="submit" value="Sign In"></p>
+
+        </fieldset>
+
+      </form>
+
+    </div> <!-- end login -->
+
+  </div>
+
+	
+               
+               
+               
+               
+            </div>
+
+        </div>
+            <div class="right">
+                    slidshow
+            
+            </div>
+        <script>
+                let rect = document.getElementById("rect");
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
+function handle1() {
+	rect.setAttribute("class", "rect2");
+}
+
+function handle2() {
+	rect.setAttribute("class", "rect1");
+}
+
+//For codepen header!!!
+setTimeout(() => {
+	password.focus();
+}, 500);
+
+setTimeout(() => {
+	username.focus();
+}, 1500);
+
+        </script>
+    
+    </body>
+</html>

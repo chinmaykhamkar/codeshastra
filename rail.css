@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:antiquewhite;
+    }
+
+.heading
+{
+    background-color:#108757;
+    text-align: center;
+    border-radius:10px; 
+    padding: 15px;
+    margin: 10px;
+}
+h1{
+    color: aliceblue;
+}
+.rail-employee{
+margin: 0px;
+padding: 7px;
+height: 100%;
+width: 49%;
+display: inline-block;
+}
+.local{
+    
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    height: 78vh;
+    border-radius: 10px;
+    }
+
+
+.btnoverimg{
+    position: relative;
+    width: 100%;
+}
+.rail-login{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: brown;
+    color: rgb(142, 255, 127);
+    cursor: pointer;
+    border-radius:10px; 
+    opacity: 0;
+    transition: 0.3s;
+}
+.rail-login:hover{
+background-color: black;
+color: azure;
+}
+.btnoverimg:hover .local{
+    opacity: 0.6;
+    box-shadow:5px 5px 5px grey;
+    
+}
+.btnoverimg:hover .rail-login{
+    opacity: 1;
+    
+}
+.student{
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    margin: 0px;
+padding: 0px;
+}
+.student-login{
+    position: absolute;
+    right:50%;
+    top: 10%;
+    transform: translate(50%,-50%);
+    padding: 20px;
+    background-color: brown;
+    color: rgb(142, 255, 127);
+    cursor: pointer;
+    border-radius:10px; 
+    opacity: 0;
+    transition: 0.3s;
+}
+.student-logo{
+    height: 78vh;
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 10px;
+    }
+    .student-login:hover{
+        background-color: black;
+        color: azure;
+        }
+        .btnoverimg:hover .student-logo{
+            opacity: 0.6;
+             box-shadow:5px 5px 5px grey; 
+        }
+        .btnoverimg:hover .student-login{
+            opacity: 1;
+        }
