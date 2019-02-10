@@ -39,6 +39,9 @@
 
           <p><label for="password">Password</label></p>
           <p><input type="password" id="password" placeholder="password"></p>
+            
+            <p><label for="email">Station</label></p>
+          <p><input type="text" id="email" placeholder="Andheri"></p>
 
           <p><input type="submit" value="Sign In"></p>
 
@@ -59,9 +62,13 @@
 
         </div>
             <div class="right">
-                    slidshow
-            
+                <img class="mySlides" src="train6.jpeg" style="width:100%">
+                <img class="mySlides" src="train4.jpeg" style="width:100%">
+                <img class="mySlides" src="train5.jpeg" style="width:100%">   
+                <img class="mySlides" src="train7.jpeg"style="width:100%"> 
+                <img class="mySlides" src="train8.jpeg" style="width:100%"> 
             </div>
+        </div>
         <script>
                 let rect = document.getElementById("rect");
 let username = document.getElementById("username");
@@ -83,8 +90,22 @@ setTimeout(() => {
 setTimeout(() => {
 	username.focus();
 }, 1500);
+            var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
         </script>
-    
+        
     </body>
 </html>

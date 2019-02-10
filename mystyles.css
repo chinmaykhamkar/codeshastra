@@ -7,7 +7,7 @@ html,body{
     
     height:100vh;
     width: 100%;
-    background: linear-gradient()
+    background-image: url(train2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,12 +67,14 @@ marquee{
     
     width: 280px;
     height: 280px;
+    position: relative;
     border-radius: 5px;
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 7px;
     background-image: url(train3.jpeg);
-    
+    opacity: 1;
+    transition: 0.3s;
     
 }
 .card_2{
@@ -98,5 +100,41 @@ marquee{
     background-image: url(college1.jpg);
     
 }
+.btnrail,.btnstudent,.btncollege{
+position: absolute;
+    top: 40%;
+    left:50%;
+    padding: 12px;
+    transform: translate(-50%,-50%);
+color: white;
+border-radius:20px;
+opacity: 0;
+transition:  0.3s;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+}
+.btnrail:hover{
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: white;
+}
 
+.card_1:hover .btnrail{
+    opacity: 1;
+    }
 
+    .btnstudent:hover{
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        color: white;
+    }
+    
+    .card_2:hover .btnstudent{
+        opacity: 1;
+        }
+        .btncollege:hover{
+            background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+            color: white;
+        }
+      
+        .card_3:hover .btncollege{
+            opacity: 1;
+            }
